@@ -1,6 +1,12 @@
 package library.parser.exception;
 
-public class InvalidDataException extends Exception {
+/**
+ * Generic exception for raising errors
+ * 
+ * @author marlowelandicho
+ *
+ */
+public class InvalidDataException extends RuntimeException {
 
 	private static final String PREFIX = "InvalidDataException occured. ";
 

@@ -3,6 +3,12 @@ package library.parser.dto;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * DTO that represents the parsed data per line
+ * 
+ * @author marlowelandicho
+ *
+ */
 public class RowData {
 
 	private Map<String, Object> values;

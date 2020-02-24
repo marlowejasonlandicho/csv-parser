@@ -51,14 +51,10 @@ public class CSVParserTest {
 		}
 	}
 
-	
 	@Test(expected = InvalidDataException.class)
 	public void testParseWithErrors() {
 		CSVParser csvParser = new CSVParser();
-
 		RowData[] rowData = csvParser.parse("src/test/resources/data_with_errors.csv");
- 
-//		assertNull(rowData);
 	}
 
 }

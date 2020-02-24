@@ -11,11 +11,24 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Stream;
 
+/**
+ * Handles File opening and manipulation
+ * 
+ * @author marlowelandicho
+ *
+ */
 public final class FileHandler {
 
 	private FileHandler() {
 	}
 
+	/**
+	 * Opens the file by file name
+	 * 
+	 * @param fileName name of file to open in the file system
+	 * 
+	 * @return a List of String where each element represents a line in the file
+	 */
 	public static List<String> openFile(String fileName) {
 		final List<String> list = new ArrayList<>();
 
@@ -29,6 +42,13 @@ public final class FileHandler {
 
 	}
 
+	/**
+	 * Opens the file by a given Java File instance
+	 * 
+	 * @param file Java File instance
+	 * 
+	 * @return a List of String where each element represents a line in the file
+	 */
 	public static List<String> openFile(File file) {
 		final List<String> list = new ArrayList<>();
 
@@ -42,6 +62,13 @@ public final class FileHandler {
 
 	}
 
+	/**
+	 * Opens the file by InputStream
+	 * 
+	 * @param fileInputStream FileInputStream pointing to a file
+	 * 
+	 * @return a List of String where each element represents a line in the file
+	 */
 	public static List<String> openFile(InputStream fileInputStream) {
 		final List<String> list = new ArrayList<>();
 
